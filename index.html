@@ -1,8 +1,8 @@
 <!-- index.html --->
 <!-- Aaron Gavendo (300603352) -->
-<!-- A impress.js game that lets the user make choices--->
+<!-- First decision added--->
 <!-- Modified on: 2014-09-20 -->
-<!-- Version: 0.1 -->
+<!-- Version: 0.2 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,15 +10,35 @@
     <title>Aaron's Dragon Game</title>
 </head>
 <body>
-
- 
-
-
-
-
-
-
-
+    
+    <div id="impress">
+        <div id="1" class="step slide">
+            <p>You ride up to a castle with intent of saving Princess Blair,
+            but a Dragon is guarding her. 
+            You must make the proper life or death decisions 
+            to reach 1/8 outcomes that result in you being a hero</p>
+            <p><a href="#2">Enter</a> the main door</p>
+            <p><a href="#3">Sneak</a> around the back</p>
+        </div>
+        <div id="2" class="step slide" data-x="500">
+            <div class="slide-text">
+                <p>You enter the Grand Hall</p>
+            </div>
+        </div>
+        <div id="3" class="step slide" data-x="1000">
+            <div class="slide-text">
+                </p>You go around back and see two possible entrances</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
     <script src="impress.js"></script>
     <script>impress().init();</script>
 </body>
