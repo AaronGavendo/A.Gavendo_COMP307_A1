@@ -1,34 +1,47 @@
 <!-- index.html --->
 <!-- Aaron Gavendo (300603352) -->
-<!-- First decision added--->
+<!--
+Add the reset.css
+Add the main.css
+Move the impress.jss to a folder and update the index.html
+Call the css in the index.html
+-->
 <!-- Modified on: 2014-09-20 -->
-<!-- Version: 0.2 -->
+<!-- Version: 0.3 -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Aaron's Dragon Game</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
 </head>
 <body>
     
     <div id="impress">
         <div id="1" class="step slide">
-            <p>You ride up to a castle with intent of saving Princess Blair,
-            but a Dragon is guarding her. 
-            You must make the proper life or death decisions 
-            to reach 1/8 outcomes that result in you being a hero</p>
-            <p><a href="#2">Enter</a> the main door</p>
-            <p><a href="#3">Sneak</a> around the back</p>
+            <div class="slide-text">
+                <p>You arrive at a castle to save Princess Blair</p>
+                <p>But a Dragon is guarding her. </p>
+                <p>You must make the proper life or death decisions</p>
+                <p>You will reach 1/8 outcomes</p>
+                <p>One will result in you being a hero</p>
+                <p>The other Seven will result in DOOM!</p>
+                <p><a href="#2">Enter</a> the main door</p>
+                <p><a href="#3">Sneak</a> around the back</p>
+            </div>
         </div>
-        <div id="2" class="step slide" data-x="500">
+        <div id="2" class="step slide" data-x="2000">
             <div class="slide-text">
                 <p>You enter the Grand Hall</p>
             </div>
+            <div class="menu"><a href="#1">START OVER</a></div>
         </div>
-        <div id="3" class="step slide" data-x="1000">
+        <div id="3" class="step slide" data-x="4000">
             <div class="slide-text">
                 </p>You go around back and see two possible entrances</p>
             </div>
+            <div class="menu"><a href="#1">START OVER</a></div>
         </div>
         
         
@@ -39,7 +52,7 @@
         
     </div>
     
-    <script src="impress.js"></script>
+    <script src="js/impress.js"></script>
     <script>impress().init();</script>
 </body>
 </html>
