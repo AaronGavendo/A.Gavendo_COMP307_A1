@@ -18,6 +18,7 @@ Add option to move unilaterally in one instance
 <body>
     
     <div id="impress">
+    <!--1st Decision Level -->
         <div id="1" class="step slide">
             <div class="slide-text">
                 <p>You arrive at a castle to save Princess Blair</p>
@@ -30,6 +31,7 @@ Add option to move unilaterally in one instance
                 <p><a href="#3">Sneak</a> around the back</p>
             </div>
         </div>
+            <!--2nd Decision Level -->
         <div id="2" class="step slide" data-x="1000">
             <div class="slide-text">
                 <p>You enter the Grand Hall</p>
@@ -50,6 +52,7 @@ Add option to move unilaterally in one instance
                 <div class="menu"><a href="#1">BACK</a> to the start</div>
             </div>
         </div>
+            <!--3rd Decision Level-->
         <div id="4" class="step slide" data-x="4000">
             <div class="slide-text">
                 <p>You kill the dragon</p>
@@ -88,6 +91,7 @@ Add option to move unilaterally in one instance
             </div>
 
         </div>
+            <!-- Outcome nodes -->
         <div id="8" class="step slide" data-x="8000">
             <div class="slide-text">
                 <p>You shake Princess Blair</p>
@@ -152,16 +156,8 @@ Add option to move unilaterally in one instance
                 <p>LOSE</p>
                 <div class="menu"><a href="#1">START OVER?</a></div>
             </div>
-        </div>
-        
-        
-        
-        
-        
-        
-        
+        </div>      
     </div>
-    
     <script src="js/impress.js"></script>
     <script>impress().init();</script>
 </body>
